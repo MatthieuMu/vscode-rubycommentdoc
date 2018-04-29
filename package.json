@@ -4,6 +4,7 @@
     "description": "Generates comments for Ruby files",
     "version": "0.0.1",
     "publisher": "matthieumu",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.22.0"
     },
@@ -32,5 +33,12 @@
         "eslint": "^4.11.0",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
+    },
+    "bugs": {
+        "url": "https://github.com/MatthieuMu/vscode-rubycommentdoc/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MatthieuMu/vscode-rubycommentdoc"
     }
 }

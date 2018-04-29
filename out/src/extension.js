@@ -4,11 +4,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require('vscode');
 const path = require("path");
+const comment_1 = require("./comment");
 
 const languages = [
     "ruby",
     "erb"
 ];
+
+let comment;
+if (!comment) {
+    comment = new comment_1.Comment();
+}
+
+comment.generate_comment();
 
 function languageIsSupported(document) {
     return (languages.findIndex(l => document.languageId === l) !== -1);
@@ -30,7 +38,13 @@ function activate(context) {
             vscode.window.showWarningMessage(`Sorry! currently only supports Ruby and erb files.`);
             return false;
         }
+        else{
+            // generate_comment();
+        }
 
+
+        // const commandName = "Document This";
+        comment.rubyComment();
         // Display a message box to the user
         vscode.window.showInformationMessage('Hello World!');
     });

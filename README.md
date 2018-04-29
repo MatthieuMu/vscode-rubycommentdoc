@@ -20,7 +20,7 @@ No settings needed.
 
 ## Known Issues
 
-- No known issues
+- No known issues / 
 [Found a bug?](https://github.com/MatthieuMu/vscode-rubycommentdoc/issues)
 
 ## Release Notes

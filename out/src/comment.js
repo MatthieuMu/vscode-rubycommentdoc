@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const vs = require("vscode");
-const ts = require("typescript");
 const utils = require("./utilities");
 
 class Comment {
@@ -15,10 +14,12 @@ class Comment {
         const sb = this._createSnippet();
         editor.insertSnippet(sb);
     }
-    _createSnippet(){
-        var content = "####";
-        content += "# okok";
-        content += "####";
+    _createSnippet() {
+        var content = "###\n";
+        content += "# @description: \n";
+        content += "# @param {any}: \n";
+        content += "# @return {any}: \n";
+        content += "###";
         const snippet = new vs.SnippetString(content.toString());
         return snippet
     }

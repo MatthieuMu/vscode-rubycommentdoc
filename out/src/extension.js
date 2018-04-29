@@ -38,15 +38,11 @@ function activate(context) {
             vscode.window.showWarningMessage(`Sorry! currently only supports Ruby and erb files.`);
             return false;
         }
-        else{
-            // generate_comment();
+        else {
+            comment.rubyComment();
+            // Display a message box to the user
+            vscode.window.showInformationMessage('A Ruby Comment Doc APPEARED !!');
         }
-
-
-        // const commandName = "Document This";
-        comment.rubyComment();
-        // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!');
     });
 
     context.subscriptions.push(disposable);

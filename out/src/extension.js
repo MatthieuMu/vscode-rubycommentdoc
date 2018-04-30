@@ -39,11 +39,12 @@ function activate(context) {
             return false;
         }
         else {
-            comment.rubyComment();
-            // Display a message box to the user
             vscode.window.showInformationMessage('A Ruby Comment Doc APPEARED !!');
+            comment.rubyComment();
         }
     });
+
+    // Display a message box to the user
 
     context.subscriptions.push(disposable);
 }

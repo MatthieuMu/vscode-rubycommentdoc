@@ -2,7 +2,7 @@
     "name": "vscode-rubycommentdoc",
     "displayName": "Ruby Comment Doc",
     "description": "Generates comments for Ruby files",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "matthieumu",
     "icon": "images/icon.png",
     "engines": {
